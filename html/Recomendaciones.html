@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threat Actors</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body class="color">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo nav-link" id="ssp"><img src="../img/SISAPWHITE.png" height="60"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/perfiles.html" class="nav-menu-link nav-link">Perfiles</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Detalles.html" class="nav-menu-link nav-link ">Detalles</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Ttps.html" class="nav-menu-link nav-link ">TTP'S</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Iocs.html" class="nav-menu-link nav-link ">IOC's</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Recomendaciones.html" class="nav-menu-link nav-link  nav-menu-link_active  ">Recomendaciones</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <br>
+      <p class="profile">ALGUNOS DE LOS PRINCIPALES ACTORES DE AMENAZA</p>
+      <br>
+    </main>
+    <section id="cajasx">
+      <div class="cajax">
+          <div class="insidex">
+            <h3>RECOMENDACIONES</h3>
+            <br><center><img src="../img/recomendations.png" class="ig"></center>
+            <p>
+              Son un conjunto de medidas que se pueden tomar para contrarrestar o minimizar los impactos negativos que pueden ser causados por un ataque.
+            </p>
+          </div>
+      </div>
+      <div class="cajay">
+          <div class="insidet">
+            <h3>Recomendaciones/Mitigaciones</h3>
+          </div>
+          <section class="acordeon">
+
+            <details>
+               <summary class="titulo3">CARBON SPIDER</summary>
+               <div class="insidey" id="res3">
+                <p>
+                  <b>Recomendaciones:</b><br><br>
+                  Segmente la red para aislar TI y OT, limitando las conexiones de red solo a estaciones de trabajo de administración e ingeniería específicamente permitidas, lo que reduce la probabilidad de que el malware OT/ICS alcance su objetivo. Use una solución de monitoreo con capacidad de DPI compatible con OT para alertar sobre indicadores y comportamientos maliciosos, observando los sistemas internos y las comunicaciones en busca de acciones hostiles conocidas.<br><br>
+                  Supervise las amenazas internas, las grandes transferencias de datos y la actividad en las redes oscuras para evitar o mitigar la fuga de datos por parte de hacktivistas y grupos de extorsión de datos. Supervise las fugas de datos especialmente conocidas en busca de credenciales expuestas.<br><br>
+                  Utilice contraseñas seguras y únicas y emplee la autenticación multifactor siempre que sea posible para asegurarse de que las credenciales robadas no puedan usarse fácilmente en contra de su organización.<br><br>
+                  Siga la guía del NCSC-UK sobre ataques de denegación de servicio , que incluye comprender los puntos débiles de su servicio, asegurarse de que los proveedores de servicios puedan manejar el agotamiento de los recursos, escalar el servicio para manejar sesiones concurrentes, preparar un plan de respuesta y probar los sistemas con regularidad.<br><br>
+                  Identifique y parchee los dispositivos IoT vulnerables para evitar que se utilicen como parte de botnets DDoS. También cambie los valores predeterminados o las contraseñas fáciles de adivinar en estos dispositivos IoT.<br><br>
+                  Supervise el tráfico de dispositivos IoT para identificar aquellos que se utilizan como parte de ataques distribuidos.<br><br>
+                </p>
+              </div>  
+            </details>
+      
+            <details>
+              <summary class="titulo3">WIZARD SPIDER</summary>
+              <div class="insidey" id="res3">
+                <p>
+                  <b>Recomendaciones:</b><br><br>
+                  Mantener los sistemas y aplicaciones actualizados para protegerse de las posibles vulnerabilidades que estos puedan presentar.<br><br>
+                  Tener la red segmentada para así disminuir la propagación del malware.<br><br>
+                  Formación y capacitación del personal tanto técnico como no técnico, ya que es una pieza clave para mantener la información de la empresa segura y a salvo.<br><br>
+                  Utilización de mecanismos como DMARC para evitar el spoofing, y así prevenir el factor humano.<br><br>
+                  Implementar sistemas EDR para monitorizar la red interna de la empresa, y así poder detectar posibles riesgos y amenazas.<br><br>
+                  Por último, pero no menos importante, la realización siempre de backups periódicos, ya que es nuestro respaldo en caso de cifrado o borrado de los datos.<br><br>
+                </p>
+              </div> 
+           </details>
+
+           <details>
+            <summary class="titulo3">LAZAROUS GROUP</summary>
+            <div class="insidey" id="res3">
+              <p>
+                <b>Indicadores de compromiso:</b><br><br> 
+                <b>Hashes: </b>
+                <table class="content-table">
+                  <thead>
+                    <tr>
+                      <th>SHA256</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        8db272ea1100996a8a0ed0da304610964dc8ca576aa114391d1be9d4c5dab02e <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        868a62feff8b46466e9d63b83135a7987bf6d332c13739aa11b747b3e2ad4bbf<br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        6310cd9f8b6ae1fdc1b55fe190026a119f7ea526cd3fc22a215bda51c9c28214<br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        0160375e19e606d06f672be6e43f70fa70093d2a30031affd2929a5c446d07c1 <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        9cf24364deb780b45e69767698a50ec458f8b80507400b3bf1dd7e9bc0459b64 <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        9c906c2f3bfb24883a8784a92515e6337e1767314816d5d9738f9ec182beaf44 <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        6a3446b8a47f0ab4f536015218b22653fff8b18c595fbc5b0c09d857eba7c7a1 <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        775bcd723e8f75f51f612bccbd7ecc4811658508025a3056248e999c7c2b0f9b<br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        326d7836d580c08cf4b5e587434f6e5011ebf2284bbf3e7c083a8f41dac36ddd <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        f1bbf214ab1dc93dc61e6155ee3864c7cd19e6ae6d40c1266fd8821cbab460c3 <br>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br><br>
+                <b><h3>Dominios:</h3></b><br><br>
+                <ul>
+                  <li>lazarusslift.com</li>
+                  <li>lazarusblue.com</li>
+                  <li>lazarusrecruitment.com</li>
+                  <li>lazarusdreamsdesigns.com</li>
+                  <li>davidlazarus.site</li>
+                  <li>ciilazarus.com</li>
+                  <li>marcuslazarus.com</li>
+                  <li>lazarustaxservice.com</li>
+                  <li>lazarusnft.com</li>
+                  <li>lazarusandsarif.com</li>
+                  </ul><br><br>
+                <b><h3>IP's:</h3></b><br><br>
+                <ul>
+                  <li>89.97.65.45</li>
+                  <li>93.157.14.154</li>
+                  <li>49.236.208.17</li>
+                  <li>5.152.213.196</li>
+                  <li>83.111.232.62</li>
+                  <li>211.76.87.252</li>
+                  <li>196.30.51.190</li>
+                  <li>119.29.11.203</li>
+                  <li>197.211.212.31</li>
+                  <li>201.26.209.137</li>
+                  <li>92.42.54.184</li>
+                  <li>216.176.85.237</li>
+                  <li>114.69.237.6</li>
+                  <li>66.194.110.173</li>
+                  <li>37.34.176.14</li>
+                  <li>204.11.77.131</li>
+                  <li>74.92.44.174</li>
+                  <li>203.142.70.70</li>
+                  <li>160.218.101.125</li>
+                  <li>93.64.245.171</li>
+                </ul> <br>
+              </p>
+       </div>  
+         </details>
+
+         <details>
+          <summary class="titulo3">NOBELIUM</summary>
+          <div class="insidey" id="res3">
+            <p>
+              <b>Indicadores de compromiso:</b><br><br> 
+              <b>Hashes: </b>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>SHA256</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      d0d626deb3f9484e649294a8dfa814c5568f846d5aa02d4cdad5d041a29d5600 <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      019085a76ba7126fff22770d71bd901c325fc68ac55aa743327984e89f4b0134<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      ce77d116a074dab7a22a0fd4f2c1ab475f16eec42e1ded3c0b0aa8211fe858d6<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      32519b85c0b422e4656de6e6c41878e95fd95026267daab4215ee59c107d6c77 <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      c15abaf51e78ca56c0376522d699c978217bf041a3bd3c71d09193efa5717c71<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      d3c6785e18fba3749fb785bc313cf8346182f532c59172b69adfb31b96a5d0af <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      dab758bf98d9b36fa057a66cd0284737abf89857b73ca89280267ee7caf62f3b <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      b8a05cc492f70ffa4adcd446b693d5aa2b71dc4fa2bf5022bf60d7b13884f666<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      e0b9eda35f01c1540134aba9195e7e6393286dde3e001fce36fb661cc346b91d <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      0f5d7e6dfdd62c83eb096ba193b5ae394001bac036745495674156ead6557589 <br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              <b><h3>Dominios:</h3></b><br><br>
+              <ul>
+                <li>rchosts.com</li>
+                <li>alifemap.com</li>
+                <li>myexpertforum.com</li>
+                <li>nobelium07vug.com</li>
+                <li>nobeliumkorf366.xyz</li>
+                <li>theyardservice.com</li>
+                <li>worldhomeoutlet.com</li>
+                <li>tacomanewspaper.com</li>
+                <li>hanproud.com</li>
+                <li>businesssalaries.com</li>
+                </ul><br><br>
+              <b><h3>IP's:</h3></b><br><br>
+              <ul>
+                <li>91.234.254.144</li>
+                <li>83.171.237.173</li>
+                <li>192.99.221.77</li>
+                <li>81.17.30.46</li>
+                <li>45.179.89.37</li>
+                <li>195.206.181.169</li>
+                <li>139.99.167.177</li>
+                <li>45.14.70.186</li>
+                <li>190.183.61.30</li>
+                <li>37.120.247.135</li>
+                <li>45.80.148.166</li>
+                <li>45.135.167.27</li>
+                <li>31.42.177.114</li>
+                <li>188.68.250.182</li>
+                <li>51.38.85.225</li>
+                <li>51.89.50.153</li>
+                <li>51.254.241.158</li>
+                <li>54.38.137.218</li>
+                <li>185.243.215.198</li>
+                <li>79.143.87.166</li>
+              </ul> <br>
+            </p>
+   </div>  
+     </details>
+     <details>
+      <summary class="titulo3">COZY BEAR</summary>
+      <div class="insidey" id="res3">
+        <p>
+          <b>Indicadores de compromiso:</b><br><br> 
+          <b>Hashes: </b>
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th>SHA256</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  876939aa0aa157aa2581b74ddfc4cf03893cede542ade22a2d9ac70e2fef1656 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  20da161f0174d2867d2a296d4e2a8ebd2f0c513165de6f2a6f455abcecf78f2a<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  b67d764c981a298fa2bb14ca7faffc68ec30ad34380ad8a92911b2350104e748 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  0ee399769a6e6e6d444a819ff0ca564ae584760baba93eff766926b1effe0010 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  45838a7e4bd340cb86d6b39beba5b64b162a7925cd7f1214c02bdcf304db81a3 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  d2cc95b72c3e72b3888e9fa35f6fe0563f9dbbd08b76d0c3546065ceca3c5961 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1dea5c3fd77956115521e97309e5c07e220229acb142c920db996a85c018ca0e <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  e4d1f8ff1282ac60adc0134aec2420aa652250ac8ddafe866e56d2fab165a132<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  bfc20b00bb5b9223db2b631061d6a5d8ba989fc5572323737a7019b9013eb89c <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  b29691ac40b8bbb12b13e84641ad20583d1387ca356850aa7b5e76b0f6c76806<br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br><br>
+          <b><h3>Hostname:</h3></b><br><br>
+          <ul>
+            <li>bhai1.ddns.net</li>
+            <li>drivestransfer.com</li>
+            <li>iiaonline.in</li>
+            <li>larsentobro.com</li>
+            <li>micrsoft.ddns.net</li>
+            <li>vmi314646.contaboserver.net</li>
+            <li>vmi296708.contaboserver.netnewsindia.ddns.net</li>
+            <li>vmi312537.contaboserver.net</li>
+            <li>mfahost.ddns.net</li>
+            <li>yepp.ddns.net</li>
+            </ul><br><br>
+          <b><h3>IP's:</h3></b><br><br>
+          <ul>
+            <li>209.127.19.241:10284</li>
+            <li>185.136.161.124</li>
+            <li>23.254.119.11</li>
+            <li>64.188.12.126</li>
+            <li>64.188.25.232</li>
+            <li>75.119.139.169</li>
+            <li>95.168.176.141</li>
+            <li>107.175.64.209</li>
+            <li>151.106.14.125</li>
+            <li>151.106.19.218</li>
+            <li>162.218.122.126</li>
+            <li>164.68.101.194</li>
+          </ul> <br>
+        </p>
+ </div>  
+   </details>
+     <details>
+      <summary class="titulo3">MYTHIC LEOPARD</summary>
+      <div class="insidey" id="res3">
+        <p>
+          <b>Indicadores de compromiso:</b><br><br> 
+          <b>Hashes: </b>
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th>SHA256</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  876939aa0aa157aa2581b74ddfc4cf03893cede542ade22a2d9ac70e2fef1656 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  20da161f0174d2867d2a296d4e2a8ebd2f0c513165de6f2a6f455abcecf78f2a<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  b67d764c981a298fa2bb14ca7faffc68ec30ad34380ad8a92911b2350104e748 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  0ee399769a6e6e6d444a819ff0ca564ae584760baba93eff766926b1effe0010 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  45838a7e4bd340cb86d6b39beba5b64b162a7925cd7f1214c02bdcf304db81a3 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  d2cc95b72c3e72b3888e9fa35f6fe0563f9dbbd08b76d0c3546065ceca3c5961 <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1dea5c3fd77956115521e97309e5c07e220229acb142c920db996a85c018ca0e <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  e4d1f8ff1282ac60adc0134aec2420aa652250ac8ddafe866e56d2fab165a132<br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  bfc20b00bb5b9223db2b631061d6a5d8ba989fc5572323737a7019b9013eb89c <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  b29691ac40b8bbb12b13e84641ad20583d1387ca356850aa7b5e76b0f6c76806<br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br><br>
+          <b><h3>Hostname:</h3></b><br><br>
+          <ul>
+            <li>bhai1.ddns.net</li>
+            <li>drivestransfer.com</li>
+            <li>iiaonline.in</li>
+            <li>larsentobro.com</li>
+            <li>micrsoft.ddns.net</li>
+            <li>vmi314646.contaboserver.net</li>
+            <li>vmi296708.contaboserver.netnewsindia.ddns.net</li>
+            <li>vmi312537.contaboserver.net</li>
+            <li>mfahost.ddns.net</li>
+            <li>yepp.ddns.net</li>
+            </ul><br><br>
+          <b><h3>IP's:</h3></b><br><br>
+          <ul>
+            <li>209.127.19.241:10284</li>
+            <li>185.136.161.124</li>
+            <li>23.254.119.11</li>
+            <li>64.188.12.126</li>
+            <li>64.188.25.232</li>
+            <li>75.119.139.169</li>
+            <li>95.168.176.141</li>
+            <li>107.175.64.209</li>
+            <li>151.106.14.125</li>
+            <li>151.106.19.218</li>
+            <li>162.218.122.126</li>
+            <li>164.68.101.194</li>
+          </ul> <br>
+        </p>
+ </div>  
+   </details>
+      
+         </section>
+      <div class="clearfix"></div>
+  </section>
+  </body>
+</html>

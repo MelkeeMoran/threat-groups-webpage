@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threat Actors</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body class="color">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo nav-link" id="ssp"><img src="../img/SISAPWHITE.png" height="60"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/perfiles.html" class="nav-menu-link nav-link">Perfiles</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Detalles.html" class="nav-menu-link nav-link ">Detalles</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Ttps.html" class="nav-menu-link nav-link nav-menu-link_active">TTP'S</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Iocs.html" class="nav-menu-link nav-link">IOC's</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Recomendaciones.html" class="nav-menu-link nav-link">Recomendaciones</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <br>
+      <p class="profile">ALGUNOS DE LOS PRINCIPALES ACTORES DE AMENAZA</p>
+      <br>
+    </main>
+    <section id="cajasx">
+      <div class="cajax">
+          <div class="insidex">
+            <h3>¿QUÉ SON LOS TTP's?</h3>
+            <br><center><img src="../img/ttp.png" class="ig"></center>
+            <p>
+              TTP significa tácticas, técnicas y procedimientos. Este es el término utilizado por los profesionales de la seguridad cibernética para describir los comportamientos, procesos, acciones y estrategias utilizadas por un actor de amenazas para desarrollar amenazas y participar en ataques cibernéticos.
+            </p>
+          </div>
+      </div>
+      <div class="cajay">
+          <div class="insidet">
+            <h3>Técnicas, Tácticas y Procedimientos utilizados</h3>
+          </div>
+          <section class="acordeon">
+
+            <details>
+               <summary class="titulo">CARBON SPIDER</summary>
+               <div class="insidey" id="res1">
+                <p>
+                  <b>Acceso inicial</b><br><br>
+                  Usa campañas de spear-phishing con archivos adjuntos integrados con exploits como punto de entrada al sistema de destino. <br><br>
+                  <b>Ejecución</b><br><br>
+                  Entrar con éxito en el sistema conduce al siguiente paso: ejecutar el ataque. Para la ejecución de código y comportamiento, este grupo usa una variedad de técnicas a través de API nativa, PowerShell, ejecución de servicios, ejecución de usuarios, Modelo de objetos de componentes de Windows (COM) y COM distribuido, e Instrumental de administración de Windows (WMI). <br><br>
+                  También abusa de la interfaz de línea de comandos y del protocolo cliente-servidor DDE, por otro aprovecha Mshta, una utilidad que puede ejecutar VBScript y tareas programadas para ejecutar código malicioso en los sistemas de los usuarios. <br><br>
+                  <b>Persistencia</b><br><br>
+                  Una vez que se ejecuta el comportamiento malicioso, los atacantes intentarán mantener su presencia en un sistema. Para mantener la persistencia, los grupos crean nuevos servicios. También agregan programas a una carpeta de inicio a la que se puede hacer referencia con una clave de ejecución del registro. Se detectó una variante del malware Carbanak que agrega entradas y claves de registro como técnica de inicio automático. También se abusaron de las credenciales de cuentas válidas existentes.<br><br>
+                  En el caso de Carbon Spider, el uso de bases de datos de shimming de aplicaciones (que pueden permitir a los desarrolladores aplicar correcciones a las aplicaciones sin tener que reescribir el código) y procesos de enganche que permiten modificar el comportamiento de los programas son algunas de las técnicas que se pueden aplicar. El primero se ha utilizado en una campaña relacionada con el malware Pillowmint. <br><br>
+                  <b>Escalada de privilegios</b><br><br>
+                  Algunas funciones necesarias para el ataque requieren privilegios de administrador. Para elevar los privilegios, los grupos eluden los mecanismos de Control de cuentas de usuario (UAC) de Windows, los nuevos servicios y las cuentas válidas para elevar los privilegios del proceso.<br><br>
+                  Con el mismo fin, en sistemas Linux, los ataques de Carbon Spider pueden utilizar sudo , un programa que permite a los usuarios ejecutar los programas de un super-usuario. Por otro lado, también pueden inyectar código en los procesos y secuestrar el orden de búsqueda utilizado para cargar archivos DLL . <br><br>
+                  <b>Evasión de defensa</b><br><br>
+                  Después de una serie de comportamientos maliciosos, los atacantes deben permanecer sigilosos y pasar desapercibidos mediante el uso de soluciones de seguridad que puedan eliminar las amenazas del sistema. Para la evasión de la defensa, ambos grupos crean o adquieren herramientas para la firma de código del malware, o desofuscan o decodifican archivos o información mediante el uso de funciones o utilidades de malware en el sistema. Este grupo también emplea el enmascaramiento para hacer que las características parezcan benignas para las soluciones de seguridad, la ofuscación de archivos o información para hacer que estos archivos e información sean difíciles de descubrir, el empaquetado de software para ocultar el código y la inyección de procesos para evadir la defensa basada en procesos.<br><br>
+                  Carbon Spider utiliza medidas de protección para restringir la ejecución y las utilidades abusadas que permiten la ejecución indirecta de comandos que pueden superar las restricciones de seguridad. El grupo también evade la virtualización y los espacios aislados e inyecta código malicioso en procesos vacíos para esquivar las defensas basadas en procesos. <br><br>
+                  <b>Acceso a credenciales</b><br><br>
+                  Algunas partes del sistema están protegidas por credenciales. Para robarlos, este grupo emplea el dumping de credenciales y la captura de entrada . Involucrando credenciales que generalmente tienen forma de hash o texto claro, o también API o portales web.<br><br>
+                  Carbon Spider también realiza tácticas de fuerza bruta o aprovecha las credenciales que se guardan en los navegadores web.<br><br>
+                  <b>Descubrimiento</b><br><br>
+                  Para la fase de descubrimiento, las campañas de Carbon Spider obtienen más conocimiento sobre el sistema mediante la recopilación de listas de diversa información: ventanas de aplicaciones abiertas , procesos en ejecución , direcciones IP y otros identificadores de red en sistemas remotos , información detallada del hardware y del sistema , configuración de la red del sistema y configuraciones y propietarios y usuarios del sistema.<br><br>
+                  Carbon Spider también recopila información sobre cuentas , archivos y directorios , permisos de grupo y registros . La información recopilada puede ayudar en el siguiente paso: el movimiento lateral.<br><br>
+                  <b>Movimiento lateral</b><br><br>
+                  Para la fase de descubrimiento, las campañas de Carbon Spider obtienen más conocimiento sobre el sistema mediante la recopilación de listas de diversa información: ventanas de aplicaciones abiertas , procesos en ejecución , direcciones IP y otros identificadores de red en sistemas remotos , información detallada del hardware y del sistema , configuración de la red del sistema y configuraciones y propietarios y usuarios del sistema.<br><br>
+                  Carbon Spider también recopila información sobre cuentas , archivos y directorios , permisos de grupo y registros . La información recopilada puede ayudar en el siguiente paso: el movimiento lateral.<br><br>
+                  <b>Recopilación</b><br><br>
+                  Después de moverse por la red e identificar los activos a los que apuntar, el siguiente paso sería recopilar datos clave. En la fase de recopilación, las campañas de Carbon Spider recopilan datos de fuentes del sistema local y a través de entradas y capturas de pantalla (como se realizó en una campaña relacionada con el malware Tirion).<br><br>
+                  Los ataques pueden organizar los datos recopilados en una ubicación particular en preparación para la exfiltración.<br><br>
+                  <b>Comando y control</b><br><br>
+                  En los ataques de Carbon Spider la comunicación con los sistemas comprometidos de los usuarios se realiza eludiendo los firewalls o los sistemas de detección de red a través de los puertos de uso común , utilizando servidores proxy de conexión para evitar conexiones directas a la infraestructura del grupo de amenazas, empleando el canal de comando y control para controlar de forma remota copie archivos de un sistema externo, combinándolos con el tráfico de red existente mediante el uso del protocolo de capa de aplicación estándar y aprovechando el protocolo criptográfico estándar para disfrazar el tráfico de comando y control.<br><br>
+                  Las campañas también pueden usar programas legítimos y software de acceso remoto para comando y control. También emplean protocolos de capa de no aplicación estándar para la comunicación.<br><br>
+                  <b>Exfiltración</b><br><br>
+                  En la fase final del ataque, los grupos filtran los datos robados al canal de comunicaciones normal a través de canales de mando y control .<br><br>
+                  Para las rutinas de ataque de Carbon Spider, los datos se pueden comprimir y/o cifrar antes de filtrarlos.<br><br>
+                  
+                </p>
+          </div>  
+            </details>
+      
+            <details>
+              <summary class="titulo">WIZARD SPIDER</summary>
+              <div class="insidey" id="res1">
+                <table class="content-table">
+                  <thead class="tab">
+                    <tr>
+                      <th>Táctica</th>
+                      <th>Técnica</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TA0042: Desarrollo de recursos</td>
+                      <td>T1588: Obtener capacidades</td>
+                    </tr>
+                    <tr>
+                      <td>TA0001: Acceso Inicial</td>
+                      <td>T1133: Servicios Remotos Externos <br>
+                        T1566: Phishing <br>
+                        T1078: Cuentas Válidas
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0002: Ejecución</td>
+                      <td>T1059: Intérprete de scripts y comandos <br>
+                        T1053: Tarea/trabajo programado <br>
+                        T1569: Servicios del sistema <br>
+                        T1204: Ejecución del usuario <br>
+                        T1047: Instrumental de administración de Windows <br>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0003: Persistencia</td>
+                      <td>T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                        T1543: Crear o modificar proceso del sistema <br>
+                        T1133: Servicios remotos externos <br>
+                        T1053: Tarea/trabajo programado  <br>
+                        T1078: Cuentas válidas
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0004: Escalada de privilegios</td>
+                      <td>T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                        T1543: Crear o modificar proceso del sistema <br>
+                        T1055: Inyección de proceso <br>
+                        T1053: Tarea/trabajo programado <br>
+                        T1078: Cuentas válidas
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0005: Evasión de Defensa</td>
+                      <td>T1222: Modificación de permisos de archivos y directorios <br>
+                        T1562: Deterioro de las defensas <br>
+                        T1070: Eliminación de indicadores en el host <br>
+                        T1036: Enmascaramiento <br>
+                        T1112: Modificación del registro <br>
+                        T1027: Información o archivos ofuscados <br>
+                        T1055: Inyección de procesos <br>
+                        T1553: Subversión de controles de confianza <br>
+                        T1078: Cuentas válidas
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0006: Credencial de Acceso</td>
+                      <td>T1557: Adversario en el medio <br>
+                        T1003: Volcado de credenciales del sistema operativo <br>
+                        T1558: Robo o falsificación de tickets de Kerberos
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0007: Descubrimiento</td>
+                      <td>T1087: Descubrimiento de cuenta <br>
+                        T1135: Descubrimiento de recurso compartido de red <br>
+                        T1018: Descubrimiento de sistema remoto <br>
+                        T1082: Descubrimiento de información del sistema <br>
+                        T1016: Descubrimiento de configuración de red del sistema <br>
+                        T1033: Descubrimiento de propietario/usuario del sistema <br>
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0008: Movimiento Lateral</td>
+                      <td>T1210: Explotación de Servicios Remotos <br>
+                        T1570: Transferencia Lateral de Herramientas <br>
+                        T1021: Servicios Remotos
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0009: Colección</td>
+                      <td>T1557: Adversario en el medio <br>
+                        T1074: Datos preparados 
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0011: Comando y Control</td>
+                      <td>T1071: Protocolo de capa de aplicación
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0010: Exfiltración</td>
+                      <td>T1048: Exfiltración sobre protocolo alternativo <br>
+                        T1041: Exfiltración sobre canal C2 
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>TA0040: Impacto</td>
+                      <td>T1489: Parada de servicio
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+         </div>  
+           </details>
+
+           <details>
+            <summary class="titulo">LAZAROUS GROUP</summary>
+            <div class="insidey" id="res1">
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Táctica</th>
+                    <th>Técnica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Acceso Inicial</td>
+                    <td>Phishing: Spearphishing Link Exploitation for Client.</td>
+                  </tr>
+                  <tr>
+                    <td>Ejecución</td>
+                    <td>Command and Scripting Interpreter: Windows <br> 
+                      Command Shell User. <br>
+                      Execution: Malicious File System Services: Service Execution.
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Persistencia</td>
+                    <td>Create or Modify System Process: Windows Service Boot or Logon. <br>
+                      Autostart Execution: Registry Run Keys / Startup Folder.                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Evasión de Defensa</td>
+                    <td>Impair Defenses: Disable or Modify Tools <br> 
+                      Impair Defenses: Disable or Modify System Firewall.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Credencial de Acceso</td>
+                    <td>Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Descubrimiento</td>
+                    <td>Network Service Discovery Process Discovery System Network. <br>
+                      Configuration Discovery System Network Connections Discovery. <br>
+                      System Owner/User Discovery File and Directory Discovery Account <br>
+                      Discovery: Domain Account.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Movimiento Lateral</td>
+                    <td>Windows Management Instrumentation Adversary-in-the-Middle <br>
+                      LLMNR/NBT-NS Poisoning and SMB Relay Password Spraying <br>
+                      Remote Services: SMB/Windows Admin Shares.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Exfiltración</td>
+                    <td>Archive Collected Data Archive via Custom Method <br>
+                      Exfiltration Over Alternative Protocol  <br>
+                      Exfiltration Over C2 Channel  <br>
+                      Exfiltration Over Web Service.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+       </div>  
+         </details>
+
+         <details>
+          <summary class="titulo">NOBELIUM</summary>
+          <div class="insidey" id="res1">
+            <table class="content-table">
+              <thead>
+                <tr>
+                  <th>Táctica</th>
+                  <th>Técnica</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TA0043: Reconocimiento</td>
+                  <td>T1595: Escaneo activo <br>
+                    T1589: Recopilar información de identidad de la víctima
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0042: Desarrollo de recursos</td>
+                  <td>T1583: Adquirir infraestructura <br>
+                    T1586: Comprometer cuentas <br>
+                    T1584: Comprometer infraestructura <br>
+                    T1587: Desarrollar capacidades <br>
+                    T1588: Obtener capacidades                      
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0001: Acceso Inicial</td>
+                  <td>T1190: Aprovechamiento de la aplicación pública <br>
+                    T1133: Servicios remotos externos <br>
+                    T1566: Phishing <br>
+                    T1195: Compromiso de la cadena de suministro <br>
+                    T1199: Relación de confianza <br>
+                    T1078: Cuentas válidas 
+                                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0002: Ejecución</td>
+                  <td>T1059: Intérprete de secuencias de comandos y comandos <br>
+                    T1203: Explotación para ejecución de cliente <br>
+                    T1053: Tarea/trabajo programado <br>
+                    T1204: Ejecución de usuario <br>
+                    T1047: Instrumental de administración de Windows
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0003: Persistencia</td>
+                  <td>T1098: Manipulación de cuenta <br>
+                    T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                    T1136: Crear cuenta <br>
+                    T1546: Ejecución desencadenada por evento <br>
+                    T1133: Servicios remotos externos <br>
+                    T1053: Tarea/trabajo programado <br> 
+                    T1505: Componente de software de servidor <br>
+                    T1078: Cuentas válidas
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0004: Escalada de privilegios</td>
+                  <td>T1548: Abuso del mecanismo de control de elevación <br>
+                    T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                    T1484: Modificación de política de dominio <br>
+                    T1546: Ejecución desencadenada por evento <br>
+                    T1068: Explotación para escalamiento de privilegios <br>
+                    T1053: Tarea/trabajo programado <br> 
+                    T1078: Cuentas válidas
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0005: Evasión de Defensa</td>
+                  <td>T1548: Abuso del mecanismo de control de elevación <br>
+                    T1140: Desofuscación/descodificación de archivos o información <br>
+                    T1484: Modificación de la política de dominio <br>
+                    T1562: Deterioro de las defensas <br>
+                    T1070: Eliminación del indicador en el host <br>
+                    T1036: Enmascaramiento <br>
+                    T1027: Información o archivos ofuscados <br>
+                    T1553: Subversión de los controles de confianza <br>
+                    T1218: Ejecución de proxy binario del sistema <br>
+                    T1550 : Usar material de autenticación alternativo <br>
+                    T1078: Cuentas válidas
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0006: Credencial de Acceso</td>
+                  <td>T1110: Fuerza bruta <br>
+                    T1555: Credenciales de almacenes de contraseñas <br>
+                    T1606: Falsificación de credenciales web <br>
+                    T1621: Generación de solicitud de autenticación multifactor <br> 
+                    T1003: Volcado de credenciales del sistema operativo <br>
+                    T1558: Robo o falsificación de tickets de Kerberos <br> 
+                    T1539: Robo de cookies de sesión web <br>
+                    T1552: Credenciales no seguras
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0007: Descubrimiento</td>
+                  <td>T1087: Descubrimiento de cuentas <br>
+                    T1482: Descubrimiento de confianza de dominio <br>
+                    T1083: Descubrimiento de archivos y directorios <br>
+                    T1069: Descubrimiento de grupos de permisos <br>
+                    T1057: Descubrimiento de procesos <br>
+                    T1018: Descubrimiento de sistemas remotos <br>
+                    T1082: Descubrimiento de información del sistema <br>
+                    T1016: Descubrimiento de configuración de red del sistema
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0008: Movimiento Lateral</td>
+                  <td>T1021: Servicios remotos <br>
+                    T1550: Usar material de autenticación alternativo                      
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0009: Colección</td>
+                  <td>T1560: Archivar datos recopilados <br>
+                    T1213: Datos de repositorios de información <br>
+                    T1005: Datos del sistema local <br>
+                    T1074: Datos preparados <br> 
+                    T1114: Recopilación de correo electrónico
+                                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0011: Comando y Control</td>
+                  <td>T1071: Protocolo de capa de aplicación <br>
+                    T1001: Ofuscación de datos <br>
+                    T1568: Resolución dinámica <br>
+                    T1573: Canal encriptado <br>
+                    T1105: Transferencia de herramienta de ingreso <br> 
+                    T1095: Protocolo de capa que no es de aplicación <br>
+                    T1090: Proxy <br>
+                    T1102: Servicio web
+                                
+                  </td>
+                </tr>
+                <tr>
+                  <td>TA0010: Exfiltración</td>
+                  <td>T1048: Exfiltración sobre protocolo alternativo                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+     </div>  
+       </details>
+
+       <details>
+        <summary class="titulo">COZY BEAR</summary>
+        <div class="insidey" id="res1">
+          <table class="content-table">
+            <thead>
+              <tr>
+                <th>Táctica</th>
+                <th>Técnica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TA0043: Reconocimiento</td>
+                <td>T1595: Escaneo activo <br>
+                  T1589: Recopilar información de identidad de la víctima
+                </td>
+              </tr>
+              <tr>
+                <td>TA0042: Desarrollo de recursos</td>
+                <td>T1583: Adquirir infraestructura <br>
+                  T1586: Comprometer cuentas <br>
+                  T1584: Comprometer infraestructura <br>
+                  T1587: Desarrollar capacidades <br>
+                  T1588: Obtener capacidades                      
+                </td>
+              </tr>
+              <tr>
+                <td>TA0001: Acceso Inicial</td>
+                <td>T1190: Aprovechamiento de la aplicación pública <br>
+                  T1133: Servicios remotos externos <br>
+                  T1566: Phishing <br>
+                  T1195: Compromiso de la cadena de suministro <br>
+                  T1199: Relación de confianza <br>
+                  T1078: Cuentas válidas 
+                                
+                </td>
+              </tr>
+              <tr>
+                <td>TA0002: Ejecución</td>
+                <td>T1059: Intérprete de secuencias de comandos y comandos <br>
+                  T1203: Explotación para ejecución de cliente <br>
+                  T1053: Tarea/trabajo programado <br>
+                  T1204: Ejecución de usuario <br>
+                  T1047: Instrumental de administración de Windows
+                </td>
+              </tr>
+              <tr>
+                <td>TA0003: Persistencia</td>
+                <td>T1098: Manipulación de cuenta <br>
+                  T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                  T1136: Crear cuenta <br>
+                  T1546: Ejecución desencadenada por evento <br>
+                  T1133: Servicios remotos externos <br>
+                  T1053: Tarea/trabajo programado <br> 
+                  T1505: Componente de software de servidor <br>
+                  T1078: Cuentas válidas
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>TA0004: Escalada de privilegios</td>
+                <td>T1548: Abuso del mecanismo de control de elevación <br>
+                  T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                  T1484: Modificación de política de dominio <br>
+                  T1546: Ejecución desencadenada por evento <br>
+                  T1068: Explotación para escalamiento de privilegios <br>
+                  T1053: Tarea/trabajo programado <br> 
+                  T1078: Cuentas válidas
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>TA0005: Evasión de Defensa</td>
+                <td>T1548: Abuso del mecanismo de control de elevación <br>
+                  T1140: Desofuscación/descodificación de archivos o información <br>
+                  T1484: Modificación de la política de dominio <br>
+                  T1562: Deterioro de las defensas <br>
+                  T1070: Eliminación del indicador en el host <br>
+                  T1036: Enmascaramiento <br>
+                  T1027: Información o archivos ofuscados <br>
+                  T1553: Subversión de los controles de confianza <br>
+                  T1218: Ejecución de proxy binario del sistema <br>
+                  T1550 : Usar material de autenticación alternativo <br>
+                  T1078: Cuentas válidas
+                </td>
+              </tr>
+              <tr>
+                <td>TA0006: Credencial de Acceso</td>
+                <td>T1110: Fuerza bruta <br>
+                  T1555: Credenciales de almacenes de contraseñas <br>
+                  T1606: Falsificación de credenciales web <br>
+                  T1621: Generación de solicitud de autenticación multifactor <br> 
+                  T1003: Volcado de credenciales del sistema operativo <br>
+                  T1558: Robo o falsificación de tickets de Kerberos <br> 
+                  T1539: Robo de cookies de sesión web <br>
+                  T1552: Credenciales no seguras
+                </td>
+              </tr>
+              <tr>
+                <td>TA0007: Descubrimiento</td>
+                <td>T1087: Descubrimiento de cuentas <br>
+                  T1482: Descubrimiento de confianza de dominio <br>
+                  T1083: Descubrimiento de archivos y directorios <br>
+                  T1069: Descubrimiento de grupos de permisos <br>
+                  T1057: Descubrimiento de procesos <br>
+                  T1018: Descubrimiento de sistemas remotos <br>
+                  T1082: Descubrimiento de información del sistema <br>
+                  T1016: Descubrimiento de configuración de red del sistema
+                </td>
+              </tr>
+              <tr>
+                <td>TA0008: Movimiento Lateral</td>
+                <td>T1021: Servicios remotos <br>
+                  T1550: Usar material de autenticación alternativo                      
+                </td>
+              </tr>
+              <tr>
+                <td>TA0009: Colección</td>
+                <td>T1560: Archivar datos recopilados <br>
+                  T1213: Datos de repositorios de información <br>
+                  T1005: Datos del sistema local <br>
+                  T1074: Datos preparados <br> 
+                  T1114: Recopilación de correo electrónico
+                                   
+                </td>
+              </tr>
+              <tr>
+                <td>TA0011: Comando y Control</td>
+                <td>T1071: Protocolo de capa de aplicación <br>
+                  T1001: Ofuscación de datos <br>
+                  T1568: Resolución dinámica <br>
+                  T1573: Canal encriptado <br>
+                  T1105: Transferencia de herramienta de ingreso <br> 
+                  T1095: Protocolo de capa que no es de aplicación <br>
+                  T1090: Proxy <br>
+                  T1102: Servicio web
+                              
+                </td>
+              </tr>
+              <tr>
+                <td>TA0010: Exfiltración</td>
+                <td>T1048: Exfiltración sobre protocolo alternativo                    
+                </td>
+              </tr>
+            </tbody>
+          </table>
+   </div>  
+     </details>
+
+     <details>
+      <summary class="titulo">MYTHIC LEOPARD</summary>
+      <div class="insidey" id="res1">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Táctica</th>
+              <th>Técnica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TA0042: Desarrollo de recursos</td>
+              <td>T1189: Compromiso de conducción <br>
+                T1566.001: Archivo adjunto de pesca submarina <br>
+                T1566.002: Enlace de pesca submarina <br>
+                T1608.004: Objetivo de paso
+              </td>
+            </tr>
+            <tr>
+              <td>TA0001: Acceso Inicial</td>
+              <td>T1059.005: Intérprete de comandos y secuencias de comandos: Visual Basic<br>
+                T1203: Explotación para la ejecución del cliente <br>
+                T1204.001: Ejecución de usuario: enlace malicioso <br>
+                T1204.002: Ejecución de usuario: archivo malicioso 
+              </td>
+            </tr>
+           
+              <td>TA0005: Evasión de Defensa</td>
+              <td>T1564.001: Ocultar artefactos: archivos y directorios ocultos <br>
+                T1036.005: Enmascaramiento: coincide con el nombre o la ubicación legítimos <br>
+                T1027: Archivos o información ofuscados
+                
+              </td>
+            </tr>
+           
+            <tr>
+              <td>TA0011: Comando y Control</td>
+              <td>T1568: Resolución dinámica
+              </td>
+            </tr>
+            <tr>
+              
+          </tbody>
+        </table>
+ </div>  
+   </details>
+      
+         </section>
+      <div class="clearfix"></div>
+  </section>
+  </body>
+</html>

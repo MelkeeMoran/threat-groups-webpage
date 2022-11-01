@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threat Actors</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/main.js"></script>
+  </head>
+  <body class="color">
+    <header class="header">
+      <nav class="nav">
+        <a class="logo nav-link" id="ssp"><img src="../img/SISAPWHITE.png" height="60"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/perfiles.html" class="nav-menu-link nav-link">Perfiles</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Detalles.html" class="nav-menu-link nav-link">Detalles</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Ttps.html" class="nav-menu-link nav-link">TTP'S</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Iocs.html" class="nav-menu-link nav-link">IOC's</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="../html/Recomendaciones.html" class="nav-menu-link nav-link">Recomendaciones</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <br>
+      <p class="profile">ALGUNOS DE LOS PRINCIPALES ACTORES DE AMENAZA</p>
+      <br>
+    </main>
+    <section id="cajasx">
+      <div class="cajax">
+          <div class="insidex">
+            <h3>ACTOR DE AMENAZA</h3>
+            <br><center><img src="../img/nb.png" class="ig"></center>
+            <p>
+              Un actor de amenazas, también conocido como actor malicioso, es cualquier persona u organización que 
+              intencionalmente causa daño en la esfera digital. Aprovechan las debilidades de las computadoras, las redes 
+              y los sistemas para llevar a cabo ataques disruptivos contra individuos u organizaciones. Aquí te mostramos 
+              algunos de los principales y más peligrosos actores de amenazas
+            </p>
+          </div>
+      </div>
+      <div class="cajay">
+          <div class="insidez">
+            <h3>Perfil de Nobelium</h3>
+          </div>
+          <div class="insidey">
+            <p>
+              <b>También conocido como:</b> Dark Halo, UNC2452, SilverFish, StellarParticle <br><br>
+              <b>Aparición:</b> 2008 <br><br>
+              <b>Origen:</b> Rusia
+            </p>
+          </div>
+          <div class="insidey">
+            <p>
+              <b>Detalles:</b><br><br>
+              Nobelium es un grupo de ciberactores con presencia activa desde 2008, vinculado directamente con operaciones de ciberespionaje del gobierno ruso centrados principalmente en compañías de infraestructura y servicios críticos. <br><br>
+              Se le ha relacionado con herramientas como FoggyWeb diseñada para extraer credenciales, bases de datos de configuración, certificados de firma de tokens, descifrado de tokens cifrados y para descargar componentes adicionales con el fin de configurar una puerta trasera permanente y poder ampliar la afectación en la red. Además, investigaciones lo mencionan detrás del famoso ataque de SolarWinds.<br><br>
+              
+              <b>Países afectados:</b> Corea del Sur, Singapur, Estados Unidos, Japón, Taiwán, Portugal, España, India entre otros.<br><br>
+              <b>Objetivos:</b> se dirige a organizaciones: en particular del sector financiero, industrias de defensa, negocios de Software, compañías farmacéuticas, industrias de manufactura y electricidad.<br><br>
+            
+            </p>
+          </div>
+          <div class="insidey">
+            <p>
+              <b>Técnicas, Tácticas y Procedimientos:</b><br><br>
+
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Táctica</th>
+                    <th>Técnica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>TA0043: Reconocimiento</td>
+                    <td>T1595: Escaneo activo <br>
+                      T1589: Recopilar información de identidad de la víctima
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0042: Desarrollo de recursos</td>
+                    <td>T1583: Adquirir infraestructura <br>
+                      T1586: Comprometer cuentas <br>
+                      T1584: Comprometer infraestructura <br>
+                      T1587: Desarrollar capacidades <br>
+                      T1588: Obtener capacidades                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0001: Acceso Inicial</td>
+                    <td>T1190: Aprovechamiento de la aplicación pública <br>
+                      T1133: Servicios remotos externos <br>
+                      T1566: Phishing <br>
+                      T1195: Compromiso de la cadena de suministro <br>
+                      T1199: Relación de confianza <br>
+                      T1078: Cuentas válidas 
+                                    
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0002: Ejecución</td>
+                    <td>T1059: Intérprete de secuencias de comandos y comandos <br>
+                      T1203: Explotación para ejecución de cliente <br>
+                      T1053: Tarea/trabajo programado <br>
+                      T1204: Ejecución de usuario <br>
+                      T1047: Instrumental de administración de Windows
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0003: Persistencia</td>
+                    <td>T1098: Manipulación de cuenta <br>
+                      T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                      T1136: Crear cuenta <br>
+                      T1546: Ejecución desencadenada por evento <br>
+                      T1133: Servicios remotos externos <br>
+                      T1053: Tarea/trabajo programado <br> 
+                      T1505: Componente de software de servidor <br>
+                      T1078: Cuentas válidas
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0004: Escalada de privilegios</td>
+                    <td>T1548: Abuso del mecanismo de control de elevación <br>
+                      T1547: Ejecución de inicio automático de inicio o inicio de sesión <br>
+                      T1484: Modificación de política de dominio <br>
+                      T1546: Ejecución desencadenada por evento <br>
+                      T1068: Explotación para escalamiento de privilegios <br>
+                      T1053: Tarea/trabajo programado <br> 
+                      T1078: Cuentas válidas
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0005: Evasión de Defensa</td>
+                    <td>T1548: Abuso del mecanismo de control de elevación <br>
+                      T1140: Desofuscación/descodificación de archivos o información <br>
+                      T1484: Modificación de la política de dominio <br>
+                      T1562: Deterioro de las defensas <br>
+                      T1070: Eliminación del indicador en el host <br>
+                      T1036: Enmascaramiento <br>
+                      T1027: Información o archivos ofuscados <br>
+                      T1553: Subversión de los controles de confianza <br>
+                      T1218: Ejecución de proxy binario del sistema <br>
+                      T1550 : Usar material de autenticación alternativo <br>
+                      T1078: Cuentas válidas
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0006: Credencial de Acceso</td>
+                    <td>T1110: Fuerza bruta <br>
+                      T1555: Credenciales de almacenes de contraseñas <br>
+                      T1606: Falsificación de credenciales web <br>
+                      T1621: Generación de solicitud de autenticación multifactor <br> 
+                      T1003: Volcado de credenciales del sistema operativo <br>
+                      T1558: Robo o falsificación de tickets de Kerberos <br> 
+                      T1539: Robo de cookies de sesión web <br>
+                      T1552: Credenciales no seguras
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0007: Descubrimiento</td>
+                    <td>T1087: Descubrimiento de cuentas <br>
+                      T1482: Descubrimiento de confianza de dominio <br>
+                      T1083: Descubrimiento de archivos y directorios <br>
+                      T1069: Descubrimiento de grupos de permisos <br>
+                      T1057: Descubrimiento de procesos <br>
+                      T1018: Descubrimiento de sistemas remotos <br>
+                      T1082: Descubrimiento de información del sistema <br>
+                      T1016: Descubrimiento de configuración de red del sistema
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0008: Movimiento Lateral</td>
+                    <td>T1021: Servicios remotos <br>
+                      T1550: Usar material de autenticación alternativo                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0009: Colección</td>
+                    <td>T1560: Archivar datos recopilados <br>
+                      T1213: Datos de repositorios de información <br>
+                      T1005: Datos del sistema local <br>
+                      T1074: Datos preparados <br> 
+                      T1114: Recopilación de correo electrónico
+                                       
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0011: Comando y Control</td>
+                    <td>T1071: Protocolo de capa de aplicación <br>
+                      T1001: Ofuscación de datos <br>
+                      T1568: Resolución dinámica <br>
+                      T1573: Canal encriptado <br>
+                      T1105: Transferencia de herramienta de ingreso <br> 
+                      T1095: Protocolo de capa que no es de aplicación <br>
+                      T1090: Proxy <br>
+                      T1102: Servicio web
+                                  
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TA0010: Exfiltración</td>
+                    <td>T1048: Exfiltración sobre protocolo alternativo                    
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div class="insidey">
+            <p>
+              <b>Indicadores de compromiso:</b><br><br> 
+              <b>Hashes: </b>
+              <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>SHA256</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      d0d626deb3f9484e649294a8dfa814c5568f846d5aa02d4cdad5d041a29d5600 <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      019085a76ba7126fff22770d71bd901c325fc68ac55aa743327984e89f4b0134<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      ce77d116a074dab7a22a0fd4f2c1ab475f16eec42e1ded3c0b0aa8211fe858d6<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      32519b85c0b422e4656de6e6c41878e95fd95026267daab4215ee59c107d6c77 <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      c15abaf51e78ca56c0376522d699c978217bf041a3bd3c71d09193efa5717c71<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      d3c6785e18fba3749fb785bc313cf8346182f532c59172b69adfb31b96a5d0af <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      dab758bf98d9b36fa057a66cd0284737abf89857b73ca89280267ee7caf62f3b <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      b8a05cc492f70ffa4adcd446b693d5aa2b71dc4fa2bf5022bf60d7b13884f666<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      e0b9eda35f01c1540134aba9195e7e6393286dde3e001fce36fb661cc346b91d <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      0f5d7e6dfdd62c83eb096ba193b5ae394001bac036745495674156ead6557589 <br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br><br>
+              <b><h3>Dominios:</h3></b><br><br>
+              <ul>
+                <li>rchosts.com</li>
+                <li>alifemap.com</li>
+                <li>myexpertforum.com</li>
+                <li>nobelium07vug.com</li>
+                <li>nobeliumkorf366.xyz</li>
+                <li>theyardservice.com</li>
+                <li>worldhomeoutlet.com</li>
+                <li>tacomanewspaper.com</li>
+                <li>hanproud.com</li>
+                <li>businesssalaries.com</li>
+                </ul><br><br>
+              <b><h3>IP's:</h3></b><br><br>
+              <ul>
+                <li>91.234.254.144</li>
+                <li>83.171.237.173</li>
+                <li>192.99.221.77</li>
+                <li>81.17.30.46</li>
+                <li>45.179.89.37</li>
+                <li>195.206.181.169</li>
+                <li>139.99.167.177</li>
+                <li>45.14.70.186</li>
+                <li>190.183.61.30</li>
+                <li>37.120.247.135</li>
+                <li>45.80.148.166</li>
+                <li>45.135.167.27</li>
+                <li>31.42.177.114</li>
+                <li>188.68.250.182</li>
+                <li>51.38.85.225</li>
+                <li>51.89.50.153</li>
+                <li>51.254.241.158</li>
+                <li>54.38.137.218</li>
+                <li>185.243.215.198</li>
+                <li>79.143.87.166</li>
+              </ul> <br>
+            </p>
+          </div>
+          <div class="insidey">
+            <p>
+              <b>Recomendaciones:</b><br><br>
+              Auditar la infraestructura local y en la nube, incluida la configuración, la configuración por usuario y por aplicación, las reglas de reenvío y otros cambios que el actor podría haber realizado para mantener el acceso.<br><br>
+              Eliminar el acceso de usuarios y aplicaciones, revise las configuraciones para cada uno y vuelva a emitir credenciales nuevas y sólidas siguiendo las mejores prácticas documentadas de la industria.<br><br>
+              Utilizar un módulo de seguridad de hardware (HSM) como se describe en la protección de los servidores de AD FS para evitar la filtración de secretos.
+            </p>
+          </div>
+      <div class="clearfix"></div>
+  </section>
+  </body>
+</html>
