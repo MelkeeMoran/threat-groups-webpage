@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+  body {
+    background-image: url(../img/hackerbgd.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: absolute;
+  }
+
+  .topic{
+    color: white;
+    text-align: center;
+  }
+
+  h2{
+    line-height: 220px;
+    font-size: 36px;
+  }
+  p{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  
+  .header {
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.719);
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 19px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: rgb(214, 16, 16);
+    color: #ffffff;
+    transition: 0.5s;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    transition: 0.5s;
+  }
+
+  #ssp{
+    margin-top: 10px;
+  }
+
+  .botonCSS{
+    margin-top: 40px;
+    font-family: sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 20px 50px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    position: center center;
+    font-size: 18px;
+  }
+  .botonCSS:hover{
+    text-decoration: none;
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .botonCSS:hover{
+    background-color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #2e2f30;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #fd0000;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+  
+  #cajas{
+    max-width: 100%;
+    background-color: rgb(212, 125, 18);
+}
+.caja{
+    display: block;
+    width: 20%;
+    height: auto;
+    background-color: white;
+    
+    float: left;
+}
+.inside{
+    width: 70%;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.imge{
+    width: 100%;
+    height: auto;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.col{
+    background-color: cadetblue;
+    height: 100px;
+}
+
+
+
+.container {
+    background-color: #000;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .container * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  
+  .container h3 {
+    background-color: #000000;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+  
+  .container:before,
+  .container:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #000000;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: '';
+    opacity: 0.9;
+    z-index: 1;
+  }
+  
+  .container:before {
+    -webkit-transform: skew(45deg) translateX(-155%);
+    transform: skew(45deg) translateX(-155%);
+  }
+  
+  .container:after {
+    -webkit-transform: skew(45deg) translateX(155%);
+    transform: skew(45deg) translateX(155%);
+  }
+  
+  .container img {
+    backface-visibility: hidden;
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  .container figcaption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+  }
+  
+  .container a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  
+  .container:hover > img,
+  .container.hover > img {
+    opacity: 0.5;
+  }
+  
+  .container:hover:before,
+  .container.hover:before {
+    -webkit-transform: skew(45deg) translateX(-55%);
+    transform: skew(45deg) translateX(-55%);
+  }
+  
+  .container:hover:after,
+  .container.hover:after {
+    -webkit-transform: skew(45deg) translateX(55%);
+    transform: skew(45deg) translateX(55%);
+  }
+  
+  .container:hover figcaption,
+  .container.hover figcaption {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .imge{
+    width: 100%;
+    height: auto;
+}
